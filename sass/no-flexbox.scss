@@ -6,6 +6,7 @@
 }
 
 @for $i from 1 through $grid-columns {
+  .c-xs-#{$i},
   .c-s-#{$i},
   .c-m-#{$i},
   .c-l-#{$i},
@@ -14,7 +15,11 @@
   }
 }
 
-@include columns('s');
+@include columns('xs');
+
+@include media($small-screen) {
+  @include columns('s');
+}
 
 @include media($medium-screen) {
   @include columns('m');
