@@ -19,19 +19,41 @@ body {
 }
 
 h1, h2 {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #ae995a;
+  border-top: 2px solid transparent;
+  transition: border-color .3s ease-in;
+
+  &.is-active,
+  &:hover,
+  &:focus {
+    border-color: #ae995a;
+  }
 }
 
 p {
   font-size: 1.5rem;
 }
 
-.container {
-  @extend %container;
+header {
+  padding: 1.2em 0 2em;
 }
 
-.row {
-  @extend %row;
+nav {
+  display: block;
+  margin-bottom: 20px;
+
+  a {
+    margin: 0 10px;
+  }
+}
+
+.container {
+  @extend %container;
 }
 
 .demo {
@@ -48,25 +70,15 @@ p {
   }
 }
 
-@for $i from 1 through $grid-columns {
-  .c-s-#{$i},
-  .c-m-#{$i},
-  .c-l-#{$i},
-  .c-xl-#{$i} {
-    @extend %column-#{$i};
+footer {
+  clear: both;
+  padding: .8em 0;
+
+  p {
+    color: #ababab;
   }
-}
 
-@include columns('s');
-
-@include media($medium-screen) {
-  @include columns('m');
-}
-
-@include media($large-screen) {
-  @include columns('l');
-}
-
-@include media($xlarge-screen) {
-  @include columns('xl');
+  small {
+    font-size: 60%;
+  }
 }
