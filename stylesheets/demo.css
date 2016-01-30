@@ -101,11 +101,20 @@ footer > div {
     text-align: center;
     color: #fff; }
 
+.fb-like {
+  width: 190px;
+  text-align: left;
+  top: 5px; }
+  .fb-like span {
+    vertical-align: top !important;
+    top: -5px; }
+
 footer {
   overflow: hidden;
   clear: both;
   padding: .8em 0; }
   footer > div {
+    padding-top: 15px;
     -moz-animation-name: up;
     -webkit-animation-name: up;
     animation-name: up;

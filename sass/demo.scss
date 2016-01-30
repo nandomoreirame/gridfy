@@ -106,12 +106,24 @@ footer > div {
   }
 }
 
+.fb-like {
+  width: 190px;
+  text-align: left;
+  top: 5px;
+
+  span {
+    vertical-align: top !important;
+    top: -5px;
+  }
+}
+
 footer {
   overflow: hidden;
   clear: both;
   padding: .8em 0;
 
   > div {
+    padding-top: 15px;
     @include animation-name(up);
     @include animation-delay(1.2s);
     @include animation-duration(1.2s);
