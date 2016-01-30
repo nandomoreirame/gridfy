@@ -1,24 +1,63 @@
-/*  */
-.container { max-width: 1024px; padding-right: 20px; padding-left: 20px; margin-left: auto; margin-right: auto; }
+/*
+ *
+ * */
+.container {
+  max-width: 1024px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto; }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box; }
 
-body { font-family: 'Roboto', sans-serif; background-color: #fefefe; color: #4e4e4e; font-weight: 300; font-size: 1.2rem; line-height: 1.5; text-align: center; }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
+  color: #4e4e4e;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center; }
 
-h1, h2 { font-weight: 300; }
+h1, h2 {
+  font-weight: 300; }
 
-a { text-decoration: none; color: #ae995a; border-top: 2px solid transparent; transition: border-color .3s ease-in; }
-a.is-active, a:hover, a:focus { border-color: #ae995a; }
+a {
+  text-decoration: none;
+  color: #ae995a;
+  border-top: 2px solid transparent;
+  transition: border-color .3s ease-in; }
+  a.is-active, a:hover, a:focus {
+    border-color: #ae995a; }
 
-p { font-size: 1.5rem; }
+p {
+  font-size: 1.5rem; }
 
-header { padding: 1.2em 0 2em; }
+header {
+  padding: 1.2em 0 2em; }
 
-nav { display: block; margin-bottom: 20px; }
-nav a { margin: 0 10px; }
+nav {
+  display: block;
+  margin-bottom: 20px; }
+  nav a {
+    margin: 0 10px; }
 
-.demo span { width: 100%; height: 50px; font-weight: 500; display: block; padding: 5px 0; margin-bottom: 15px; background-color: #ae995a; text-align: center; color: #fff; }
+.demo span {
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  display: block;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  background-color: #ae995a;
+  text-align: center;
+  color: #fff; }
 
-footer { clear: both; padding: .8em 0; }
-footer p { color: #ababab; }
-footer small { font-size: 60%; }
+footer {
+  clear: both;
+  padding: .8em 0; }
+  footer p {
+    color: #ababab; }
+  footer small {
+    font-size: 60%; }
