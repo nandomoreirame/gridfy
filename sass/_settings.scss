@@ -1,0 +1,15 @@
+//==================================
+//=            Settings            =
+//==================================
+
+$gutter: 20px !default;
+$grid-columns: 12 !default;
+$max-width: 1024px !default;
+
+$enable-flex-box: false !default;
+$default-feature: min-width !default; // no mobile first use max-width
+
+$small-screen  : 768px !default;
+$medium-screen : 1024px !default;
+$large-screen  : 1224px !default;
+$xlarge-screen : 1824px !default;
