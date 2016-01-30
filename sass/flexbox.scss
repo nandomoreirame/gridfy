@@ -7,6 +7,7 @@ $enable-flex-box: true !default;
 }
 
 @for $i from 1 through $grid-columns {
+  .c-xs-#{$i},
   .c-s-#{$i},
   .c-m-#{$i},
   .c-l-#{$i},
@@ -15,7 +16,11 @@ $enable-flex-box: true !default;
   }
 }
 
-@include columns('s');
+@include columns('xs');
+
+@include media($small-screen) {
+  @include columns('s');
+}
 
 @include media($medium-screen) {
   @include columns('m');
