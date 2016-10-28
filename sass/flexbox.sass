@@ -1,0 +1,28 @@
+$enable-flex-box: true !default
+
+@import gridfy
+
+.row
+  @extend %row
+
+@for $i from 1 through $grid-columns
+  .c-xs-#{$i},
+  .c-s-#{$i},
+  .c-m-#{$i},
+  .c-l-#{$i},
+  .c-xl-#{$i}
+    @extend %column-#{$i}
+
++columns("xs")
+
++media($small-screen)
+  +columns("s")
+
++media($medium-screen)
+  +columns("m")
+
++media($large-screen)
+  +columns("l")
+
++media($xlarge-screen)
+  +columns("xl")
